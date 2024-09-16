@@ -1,0 +1,640 @@
+/*{
+    margin:0;
+    padding:0;
+    font-family: 'Droid-serif', sans-serif;
+}
+.topnav{
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow:0px 2px 2px rgb(175, 174, 174);
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center ;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: purple;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+
+<<<<<<< HEAD
+}
+
+.toggle-button{
+  position:absolute;
+  top: 0.75rem;
+  right:1rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:30px;
+  height:21px;
+}
+
+.toggle-button .bar{
+  height:3px;
+  width:100%;
+  background-color: #592a51;
+  border-radius: 10px;
+
+
+}
+
+@media (max-width:600px){
+  .toggle-button{
+
+
+    
+    display:flex;
+  }
+
+  .nav-links{
+    display:none;
+    width:100%
+  
+  }
+
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links li{
+    text-align:center
+  }
+
+  .nav-links.active{
+    display:flex;
+
+  }
+
+
+  
+
+
+/*.topnav{
+=======
+}*/
+
+/*57a876b61666ce26d2fbb5b97542b019db5cfce5*/
+.topnav{
+/*58cced456af3577945778d46175247ec8e152c41*/
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow:0px 2px 2px rgb(175, 174, 174);
+}
+.topnav .navv a {
+    position: relative;
+    float: right;
+    display: inline;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 8px;
+    font-size: 15px;
+}
+.topnav .icon{
+    display: none;
+}
+.ourteam , .expertise , .careers {
+    float: right;
+    overflow: hidden;
+}
+.ourteam .ourteambtn , .expertise .expertisebtn , .careers .careersbtn {
+    font-size: 15px;
+    color: black;
+    background-color:inherit;
+    border: none;
+    font-family: 'Droid Serif', serif;
+    padding: 25px 8px;
+    margin:0;
+}
+.ourteam-content , .expertise-content , .careers-content {
+    display: none;
+    position: absolute;
+    box-shadow:  0px 8px 16px 0px black;
+    min-width: 160px;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+.ourteam-content a , .expertise-content a , .careers-content a {
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+.topnav .navv a:hover , .ourteam:hover .ourteambtn , .expertise:hover .expertisebtn , .careers:hover .careersbtn {
+    background-color: black;
+    color: white;
+}
+.ourteam-content a:hover , .expertise-content a:hover , .careers-content a:hover {
+    background-color: #ddd;
+    color: black;
+    
+}
+
+ .ourteam:hover .ourteam-content ,.expertise:hover .expertise-content,.careers:hover .careers-content {
+    display: block;
+  
+
+ }    
+.navlogo {
+ margin: 10px;
+ padding:5px;
+}
+
+
+
+/*------------code here to make the nav responsive ------------*/
+/* @media screen and (max-width: 600px) {
+  .topnav ,.navv a:not(:first-child) , .ourteam .ourteambtn , .expertise .expertisebtn , .careers .careersbtn  {
+    display: none;
+  }
+  .topnav a.icon , .navlogo {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on
+ small screens (display the links vertically instead of horizontally) */
+ /*@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #875a98;
+  }
+  .topnav.responsive .navv a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .ourteam , .expertise , .careers {float: none;}
+  .topnav.responsive .ourteam-content , .expertise-content , .careers-content  {position: relative;}
+  .topnav.responsive .ourteam .ourteambtn , .expertise .expertisebtn , .careers .careersbtn{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+ 
+
+ /*--------------code here to make the nav responsive-------------- */
+ /*------------------header ---------------------------------------*/
+ .hero{
+  background-image: url(header.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+ }
+ .hero > h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Droid Serif', serif;
+  font-size: 40px;
+ }
+ .hero > p{
+  color: white;
+  text-align: center;
+  font-family: 'Droid Serif', serif;
+  padding: 20px;
+  font-size: 20px;
+ }
+ #herobtn{
+  position: absolute;
+  right: 45%;
+ }
+ #herobtn:hover{
+  color: black;
+  background-color: #875a98;
+  border: 1px solid black;
+
+ }
+
+.testimonial-background{
+    background-color: #875a98;
+    margin-top: 300px;
+    background-image: url(gavel_1.jpg);
+}
+ body {
+   font-family: 'Droid Serif', serif;
+ }
+ 
+ h1 {
+   font-size: 60px;
+   text-align: center;
+   padding-top: 100px;;
+ }
+ /*the size of the testimonial box*/
+ 
+ .content-slider {
+/*57a876b61666ce26d2fbb5b97542b019db5cfce5*/
+   width: 100%;
+   height: 250px;
+ }
+ 
+ .slider {
+   height: 250px;
+   width: 680px;
+   margin: 40px auto 0;
+   overflow: visible;  /*Content is clipped if necessary to fit the padding box. */
+   position: relative; 
+ }
+ 
+ .mask {                /*The scrolled text start to be visible after "What Client Says" text*/
+   overflow: hidden;
+   height: 250px;
+ }
+ 
+ .slider ul {
+   margin: 0;
+   padding: 0;
+   position: relative;
+ }
+ 
+ .slider li {
+   width: 680px;
+   height: 320px;
+   position: absolute;
+   top: -325px;
+   list-style: none;
+ }
+ 
+ .slider .quote {
+   font-size: 40px;
+   font-style: italic;
+ }
+ 
+ .slider .source {
+   font-size: 20px;
+   text-align: right;
+ }
+ 
+ .slider li.anim1 {
+   animation: cycle 15s linear infinite; /*The cycle is 15s, plays in linear position for infinite times*/
+ }
+ 
+ .slider li.anim2 {
+   animation: cycle2 15s linear infinite;
+ }
+ 
+ .slider li.anim3 {
+   animation: cycle3 15s linear infinite;
+ }
+ 
+ .slider li.anim4 {
+   animation: cycle4 15s linear infinite;
+ }
+ 
+ .slider li.anim5 {
+   animation: cycle5 15s linear infinite;
+ }
+ 
+ .slider:hover li {
+   animation-play-state: paused; /*Pause the animation when hovering*/
+ }
+ 
+ @keyframes cycle { /*Create the animation where the set of css changes gradually from one position to another*/
+   0% { /*Percentage of the animation 0% indicates the start of the animation*/
+     top: 0px;
+   }
+   4% {
+     top: 0px;
+   }
+   16% {
+     top: 0px;
+     opacity: 1;
+     z-index: 0;
+   }
+   20% {
+     top: 325px;
+     opacity: 0;
+     z-index: 0;
+   }
+   21% {
+     top: -325px;
+     opacity: 0;
+     z-index: -1;
+   }
+   50% {
+     top: -325px;
+     opacity: 0;
+     z-index: -1;
+   }
+   92% {
+     top: -325px;
+     opacity: 0;
+     z-index: 0;
+   }
+   96% {
+     top: -325px;
+     opacity: 0;
+   }
+   100% {
+     top: 0px;
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes cycle2 {
+   0% {
+     top: -325px;
+     opacity: 0;
+   }
+   16% {
+     top: -325px;
+     opacity: 0;
+   }
+   20% {
+     top: 0px;
+     opacity: 1;
+   }
+   24% {
+     top: 0px;
+     opacity: 1;
+   }
+   36% {
+     top: 0px;
+     opacity: 1;
+     z-index: 0;
+   }
+   40% {
+     top: 325px;
+     opacity: 0;
+     z-index: 0;
+   }
+   41% {
+     top: -325px;
+     opacity: 0;
+     z-index: -1;
+   }
+   100% {
+     top: -325px;
+     opacity: 0;
+     z-index: -1;
+   }
+ }
+ 
+ @keyframes cycle3 {
+   0% {
+     top: -325px;
+     opacity: 0;
+   }
+   36% {
+     top: -325px;
+     opacity: 0;
+   }
+   40% {
+     top: 0px;
+     opacity: 1;
+   }
+   44% {
+     top: 0px;
+     opacity: 1;
+   }
+   56% {
+     top: 0px;
+     opacity: 1;
+     z-index: 0;
+   }
+   60% {
+     top: 325px;
+     opacity: 0;
+     z-index: 0;
+   }
+   61% {
+     top: -325px;
+     opacity: 0;
+     z-index: -1;
+   }
+   100% {
+     top: -325px;
+     opacity: 0;
+     z-index: -1;
+   }
+ }
+ 
+ @keyframes cycle4 {
+   0% {
+     top: -325px;
+     opacity: 0;
+   }
+   56% {
+     top: -325px;
+     opacity: 0;
+   }
+   60% {
+     top: 0px;
+     opacity: 1;
+   }
+   64% {
+     top: 0px;
+     opacity: 1;
+   }
+   76% {
+     top: 0px;
+     opacity: 1;
+     z-index: 0;
+   }
+   80% {
+     top: 325px;
+     opacity: 0;
+     z-index: 0;
+   }
+   81% {
+     top: -325px;
+     opacity: 0;
+     z-index: -1;
+   }
+   100% {
+     top: -325px;
+     opacity: 0;
+     z-index: -1;
+   }
+ }
+ 
+ @keyframes cycle5 {
+   0% {
+     top: -325px;
+     opacity: 0;
+   }
+   76% {
+     top: -325px;
+     opacity: 0;
+   }
+   80% {
+     top: 0px;
+     opacity: 1;
+   }
+   84% {
+     top: 0px;
+     opacity: 1;
+   }
+   96% {
+     top: 0px;
+     opacity: 1;
+     z-index: 0;
+   }
+   100% {
+     top: 325px;
+     opacity: 0;
+     z-index: 0;
+   }
+ }
+/* contact us form */
+/* contact us form */
+.contactus {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: black;
+}
+.contactus .contactus-d {
+  text-align: center;
+  padding: 0px 10px;
+  padding-top: 100px;
+
+}
+.contactus .contactus-d > h2 {
+  color: white;
+  border-bottom: 2px solid #875a98;
+  display: inline;
+
+}
+.contactus .contactus-d > p {
+  padding-top: 20px;
+  color: rgba(221, 221, 221, 0.553); }
+
+
+
+#contact-us-form {
+  margin: 25px auto !important;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 15px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#contact-us-form div {
+  margin: 0 auto 10px;
+  width: 100%;
+  
+  
+}
+
+#contact-us-form input:focus {
+  
+  box-shadow: none;
+  border: 1px solid #686565;
+  color: #875a98;
+
+}
+
+
+#contact-us-form textarea, input {
+  outline: 1px solid #686565;
+  color: #875a98;
+}
+
+#contact-us-form textarea {
+  margin-top: 10px;
+  resize: none;
+  height: 150px;
+
+}
+
+#contact-us-form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #686565;
+
+}
+
+
+
+
+#contact-us-form button {
+  display: block;
+  width: 5rem;
+  margin: 0 auto;
+  background-color: rgb(0,0,0);
+  border: 0;
+  color: rgb(255,255,255);
+  border-radius: 5px;
+  padding: 5px;
+}
+#contact-us-form button:hover {
+  background-color:#875a98;
+  color:black;
+}
+
+ 
+/*-------footer------*/
+.footer-content {
+  background-color: black;
+  text-align: center;
+  padding: 2px;
+}
+.footer-content .socials  a {
+  color: #ccc;
+  padding: 0px 5px;
+  line-height: 20p;
+  text-align: center;
+  margin: 0.8px;
+  opacity: 0.80;
+  font-size: 20px;
+}
+.footer-content .socials  a:hover {
+  color: #875a98;
+}
+.footer-content .copyright {
+  color: rgba(204, 204, 204, 0.553);
+  padding-top: 5px;
+}
+/*57a876b61666ce26d2fbb5b97542b019db5cfce5*/
